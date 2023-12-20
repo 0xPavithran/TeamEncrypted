@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silkroad</title>
+
+    <style>
+        body {
+            background-color: rgb(43, 16, 85);
+            background-image: url(stars.png);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 100px 0;
+            margin: 0;
+        }
+
+
+        table {
+            position: absolute;
+            top: 200px;
+            left: 80px;
+            width: 90%;
+            border-collapse: collapse;
+            }
+            th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            }
+            th {
+            background-color: black;
+            }
+            h1{
+                position: absolute;
+                top: 25px;
+                left: 350px;
+                font-size: 75px;
+            }
+
+            .attractive-button {
+                position: absolute;
+                left: 1100px;
+                display: inline-block;
+                padding: 15px 30px;
+                font-size: 16px;
+                font-weight: bold;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                color: #fff;
+                background-color: #4CAF50; /* Green color */
+                transition: background-color 0.3s ease;
+              }
+              
+              .attractive-button:hover {
+                background-color: #45a049; /* Darker green color on hover */
+              }
+          
+
+    </style>
+
+</head>
+<body>
+    <h1>silkroad transaction</h1>
+    <a href="./blockchain-tracer/btcindex.html">
+    <button class="attractive-button"> Trace</button>
+</a>
+    <table>
+        <thead>
+            <tr>
+                <th>From Address</th> 
+                <th>To Address</th>
+                <th>Date & Time</th>
+                <th>Value (BTC)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>335umQ4egqMjDo6wSXYwQZYPntZzMveNTJ(coinbase)</td>
+                <td>bc1q8y2ys3g6la5g0kp3tcw6cuckx4n5dh9lpz5u4h</td>
+                <td>2023-12-13 18:51 PM</td>
+                <td>0.00014</td>
+            </tr>
+            <tr>
+                <td>bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h(binance)</td>
+                <td>3Gst5XtyQPjsiKdmGVLThei9vJsBhhe4s2</td>
+                <td>2023-12-13 08:45 AM</td>
+                <td>0.012</td>
+            </tr>
+          
+        </tbody>
+
+    </table>
+</body>
+</html>

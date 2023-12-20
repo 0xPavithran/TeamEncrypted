@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+    <header id="header">
+       
+        <nav>
+            <a href="./index.html"><b>Home</b></a>
+            <a href="./about.html"><b>About</b></a>
+            <a href="./investigation.html" class="active"><b>Cyber Crime Investigation Portal</b></a>
+            <a href="./blog.html" id="blog"><b>Blog</b></a>
+            <a href="./contact.html" id="contact"><b>Contact</b></a>
+        </nav>
+    </header>
+    <style>
+        body{
+            background-color: rgb(43, 16, 85);
+        }
+        h1{
+            color: #da916d;
+            font-size: 500%;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: none;
+            position: relative;
+            width: 100%;
+            height: 70px;
+            z-index: 0;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            position: relative;
+            padding: 10px 15px;
+            left: 480px;
+            bottom: 0px;
+            font-family: sans-serif;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            bottom: 0;
+            left: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            border-radius: 20px;
+            color:#8754ff;
+        }
+
+      
+        .animation-fading {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #fa5705;
+            border: 2px solid black;
+            border-radius: 20px;
+            width: 300px;
+            position: absolute;
+            top: 150px;
+            left: 520px;
+            background-color: black;
+            color:  rgb(185, 185, 225);
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+     
+        .About-anonxpose{
+            border: 2px solid black;
+          border-radius: 20px;
+          text-align: center;
+          height: 240px;
+          width: 450px;
+          position: absolute;
+          top: 230px;
+          left: 200px;
+          background-color: black;
+        color: white;
+        padding: 10px;
+        font-family: sans-serif;
+
+
+
+        }
+        .About-anonxpose h3{
+            color: rgb(185, 185, 225);
+            font-family: sans-serif;
+        }
+        
+        
+       
+        .our-mission{
+               border: 2px solid black;
+               border-radius:  20px ;
+               text-align: center;
+               height: 240px;
+               width: 450px;
+               position: absolute;
+               top: 230px;
+               right: 180px;
+               color: white;
+               background-color: black;
+               padding: 10px;
+               font-family: sans-serif;
+
+
+        }
+        .our-mission h3{
+            color: rgb(185, 185, 225);
+            font-family: sans-serif;
+        }
+        
+
+         /* feature style*/
+        .features{
+            border: 2px solid black;
+            border-radius: 20px;
+            text-align: center;
+            height: 270px;
+            width: 450px;
+            position: absolute;
+            bottom: -130px;
+            left: 200px;
+            background-color: black;
+          color: white;
+          padding: 10px;
+          font-family: sans-serif;
+        }
+        .features h3{
+            color: rgb(185, 185, 225);
+            font-family: sans-serif;
+        }
+      
+        
+    </style>
+</head>
+<body>
+
+   <!--about heading-->
+<div class="animation-fading ">About us</div>
+<div class="About-anonxpose "> <!--about anonxpose topic-->
+    <h3 ><u>About AnonXpose:</u></h3><br>
+
+<p>Welcome to AnonXpose, your advanced blockchain investigation and analysis tool. 
+    Empowering users with cutting-edge technology, AnonXpose is designed to unravel the complexities of blockchain transactions, providing in-depth insights and analytics.</p><br><br>
+</div>
+<div class="our-mission "> <!--class for our mission-->
+<h3 ><u>Our Mission:</u></h3><br>
+
+<p>At AnonXpose, our mission is to foster transparency and security in the digital landscape.
+     We understand the importance of blockchain technology in today's interconnected world and aim to provide individuals and organizations with the tools they need to navigate this space with confidence.</p><br>
+    </div>
+    <div class="features ">  <!--class creation for features-->
+<h3><u>Features:</u></h3>
+ <p>Blockchain Transparency:  Gain a comprehensive view of blockchain transactions, ensuring transparency and accountability.</p>
+ <p>Advanced Analytics:  Leverage powerful analytics tools to extract meaningful patterns and trends from blockchain data.</p>
+ <p>Interface:  Our intuitive interface makes complex blockchain data accessible to both experts and newcomers in the field.</p>
+<p>Security:  Trust AnonXpose for secure and confidential blockchain analysis, ensuring the safety of your data.</p>
+</div>
+</body>
+</html>

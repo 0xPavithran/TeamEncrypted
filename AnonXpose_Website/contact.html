@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="script" href="./mail.js">
+    <style>
+        body {
+            background: linear-gradient(to right, #9F6BD4, #7A89CE, #6499CB, #3DB8C7);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 100px 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: #0CBDD4;
+            width: 400px; /* Adjusted the width */
+            margin: auto; /* Centered the card */
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
+            bottom:410px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            
+            left: 50%; /* Centered the card horizontally */
+            transform: translateX(-50%); /* Centered the card horizontally */
+            opacity: 1;
+            box-shadow: 5px 5px 10px #000; /* Shortened and moved the shadow */
+        }
+
+        .card input[type="text"],
+        .card input[type="number"],
+        .card select {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #0CBDD4;
+            border-radius: 10px;
+            outline: none;
+            display: block;
+            margin: 10px auto; /* Centered the inputs */
+        }
+
+        .card input:hover,
+        .card select:hover {
+            background-color: #c2c2c2;
+        }
+
+        .card button {
+            width: 80%;
+            background-color: #6c757d; /* Changed the button color */
+            color: white;
+            padding: 14px 20px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            display: block;
+            margin: 10px auto; /* Centered the button */
+            box-shadow: 3px 3px 5px #888; /* Added shadow to button */
+        }
+
+        .card button:hover {
+            background-color: #495057; /* Darkened the button color on hover */
+        }
+
+        /* styling for the turned div */
+        #turned-div {
+            width: 200%;
+            height: 600px;
+            position: relative;
+            bottom: 440px;
+            right: 250px;
+            background-color:white;
+            border: 1px solid white;
+            rotate: -15deg;
+        }
+
+        /* styling for the mega div */
+        #mega-div{
+            position:relative;
+            bottom:550px;
+            width:800px;
+            height:535px;
+            left: 350px;
+            border-radius: 20px;
+            background-color:#3F136B ;
+        }
+
+        /* managing with the logo and para */
+
+        #logo{
+            width: 350px;
+            height:300px;
+            position:relative;
+            right:230px;    
+        }
+
+        #info-para{
+
+            position:relative;
+            right: 230px;
+            bottom:50px;
+        }
+
+                  /* for the nav bar */
+
+   header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: none;
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            z-index: 1000;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #8754ff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            position: relative;
+            padding: 10px 15px;
+            left: 700px;
+            bottom: 80px;
+            font-family: sans-serif;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            bottom: 0;
+            left: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #8754ff;
+            border-radius: 20px;
+            color:white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header id="header">
+       
+        <nav>
+            <a href="./index.html"><b>Home</b></a>
+            <a href="./about.html"><b>About</b></a>
+            <a href="./investigation.html" class="active"><b>Cyber Crime Investigation Portal</b></a>
+            <a href="./blog.html" id="blog"><b>Blog</b></a>
+            <a href="./contact.html" id="contact"><b>Contact</b></a>
+        </nav>
+    </header>
+
+<!--Turned div up -->
+
+<div id="turned-div"></div>
+
+<!--Turned div ends here-->
+
+<!--card dic=vision starts here-->
+<form action="https://sheetdb.io/api/v1/kjdjwvrl7u96y" method="post" id="sheetdb-form"></form>
+<div id="mega-div">
+    <img src="logo.png" id="logo">
+    <p id="info-para">Connect with us to fortify your digital<br> presence. 
+        Together, we navigate the <br>cyber landscape, making every click<br>
+        secure and every interaction meaningful.</p>
+<div class="card">
+    <h2>Contact-Us</h2>
+    Send Secure Message To Us:
+    <input type="text" placeholder="Firstname" name="data[First name]">
+    <input type="text" placeholder="Last name" name="data[Last name]">
+    <input type="text" placeholder="Email" name="data[Email]">
+    <input type="number" placeholder="number" name="data[Ph.no(optional)]">
+    <select name="data[Your Country]">
+        <option>United States</option>
+        <option>United Kingdom</option>
+        <option>India</option>
+        <option>Canada</option>
+        <option>Australia</option>
+        <option>Germany</option>
+        <option>France</option>
+        <option>Japan</option>
+        <option>China</option>
+    </select>
+    <input class="dis" type="text" name="data[Issue with the transaction hash]" placeholder="Enter Your Comments Here!">
+    <button type="submit" class="send">Send</button>
+</div>
+</div>
+<!--card div ends here-->
+
+<!-- script codings-->
+<script>
+    var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(document.getElementById("sheetdb-form")),
+        }).then(
+            response => response.json()
+        ).then((html) => {
+            // you can put any JS code here
+            window.open('index.html');
+        });
+    });
+</script>
+
+</body>
+</html>
